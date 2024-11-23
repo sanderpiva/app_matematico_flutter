@@ -26,17 +26,12 @@ class CalculationPage extends StatelessWidget {
                   ),
                 );
               },
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Cálculo de PA',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                ),
+
+              child: Image.asset(
+                'assets/img/i_pa.png',
+                //width: double.infinity,
+                //height: double.infinity,
+                fit: BoxFit.fill,
               ),
             ),
             GestureDetector(
@@ -48,17 +43,11 @@ class CalculationPage extends StatelessWidget {
                   ),
                 );
               },
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Cálculo de PG',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                ),
+              child: Image.asset(
+                'assets/img/i_pg.png',
+                //width: double.infinity,
+                //height: double.infinity,
+                fit: BoxFit.fill,
               ),
             ),
           ],
@@ -129,7 +118,15 @@ class _CalculationInputScreenState extends State<CalculationInputScreen> {
           key: _formKey,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+          children: [
+              /*
+              Text(
+                "Termo geral da PA: an = a1 + (n-1)*r",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),*/
+
               TextFormField(
                 controller: _primeiroTermoController,
                 keyboardType: TextInputType.number,

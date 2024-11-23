@@ -10,8 +10,8 @@ class MyDrawer extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: [
             const UserAccountsDrawerHeader(
-              accountName: Text("Fábio Jr. Alves"),
-              accountEmail: Text("faguanil@gmail.com"),
+              accountName: Text("Aplicativo Matemático"),
+              accountEmail: Text("players@gmail.com"),
               currentAccountPicture: CircleAvatar(
                 //original
                 /*backgroundColor: Colors.white,
@@ -19,17 +19,17 @@ class MyDrawer extends StatelessWidget {
                   'F.JR.A',
                   style: TextStyle(color: Colors.blue),
                 ),*/
-                backgroundImage: AssetImage('assets/img/girafa.jpg'), // Replace with your image path
+                backgroundImage: AssetImage('assets/img/logo.jpg'), // Replace with your image path
                 backgroundColor: Colors.transparent, // Transparent background for image visibility
 
               ),
               decoration: BoxDecoration(
-                //color: Colors.blue,
+                color: Colors.blue,
                 //parte acrescentada e testada pelo aluno
-                image: DecorationImage(
+                /*image: DecorationImage(
                   image: AssetImage('assets/img/leao.jpg'), // Replace with your image path
                   fit: BoxFit.cover, // Ensure image covers the entire background
-                ),
+                ),*/
               ),
             ),
             ListTile(

@@ -28,7 +28,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             size: 30,
           ),
           onPressed: () {
-            print("Olá mundo");
+            //print("Olá mundo");
           },
         ),
       ],

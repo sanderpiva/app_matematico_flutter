@@ -8,22 +8,20 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff847859),
-      appBar: MyAppBar(title: 'MEU APP'),
+      backgroundColor: Colors.blueGrey,
+      appBar: MyAppBar(title: 'Aplicativo Matemático'),
       drawer: MyDrawer(),
       body: Center(
+
         child: Image.asset(
-          'assets/img/girafa.jpg',
-          width: double.infinity,
-          height: double.infinity,
-          //fit: BoxFit.cover,
-        ),
-        /*
-        child: Image.network(
-          'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg',
+          'assets/img/logo2.png',
+          //width: double.infinity,
+          //height: double.infinity,
           fit: BoxFit.cover,
-        ),*/
-      ),
+        ),
+      )
     );
   }
 }
+
+
